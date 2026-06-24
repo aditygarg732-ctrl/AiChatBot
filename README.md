@@ -53,7 +53,7 @@ The application combines intelligent AI conversations with a horror-inspired dar
 
 ### Home Screen
 
-![Home](homescreen.jpeg)
+![Home](home_screen.jpeg)
 
 ### 🤖 AI-Powered Conversations
 
@@ -68,6 +68,10 @@ The application combines intelligent AI conversations with a horror-inspired dar
 * Authentication via-
 * google
 * Email/password
+
+### User Authentication
+![Authetication](Authentication.jpeg)
+
 
 
 ### 💬 Chat History Management
@@ -87,9 +91,7 @@ The application combines intelligent AI conversations with a horror-inspired dar
 * Easy navigation through saved chats
 * Quick conversation retrieval
 
-### Feedback Screen
 
-![Feedback](feedback.jpeg)
 
 
 ### 📝 In-App Feedback System
@@ -98,9 +100,12 @@ The application combines intelligent AI conversations with a horror-inspired dar
 * Suggestions and improvement requests
 * Helps improve future releases
 
-### Settings
+### Feedback Screen
 
-![Settings](settings.jpeg)
+![Feedback](feedback.jpeg)
+
+
+
 
 ### ⚙️ Settings Panel
 
@@ -109,12 +114,19 @@ The application combines intelligent AI conversations with a horror-inspired dar
 * App Information
 * User Settings
 
+### Settings
+
+![Settings](settings.jpeg)
+
+
+
 ### 🌑 Horror Dark Theme
 
 * Dark fantasy inspired design
 * Horror-themed visual elements
 * Atmospheric user experience
 * Custom UI assets
+* 
 
 ### ⚡ Performance
 
