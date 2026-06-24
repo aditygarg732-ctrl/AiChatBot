@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:fitsSystemWindows="false"
+android:id="@+id/drawerLayoutLogin"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/black"
+tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/loginTitleD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Welcome"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/rings"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/orbit_rings_glow"
+            app:layout_constraintTop_toBottomOf="@id/loginTitleD"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/glow_hand"
+            app:layout_constraintTop_toBottomOf="@id/loginTitleD"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="60dp"/>
+
+        <Button
+            android:id="@+id/loginBtnOpenDrawer"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/white"
+            android:text="Login"
+            android:textColor="@color/black"
+            app:cornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rings" />
+
+        <Button
+            android:id="@+id/toggleRegisterTvD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="32dp"
+            android:text="Don't have an account? Register"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginBtnOpenDrawer" />
+
+        <View
+            android:id="@+id/dividerD"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="32dp"
+            android:background="#444444"
+            app:layout_constraintEnd_toEndOf="@id/loginBtnOpenDrawer"
+            app:layout_constraintStart_toStartOf="@id/loginBtnOpenDrawer"
+            app:layout_constraintTop_toBottomOf="@id/toggleRegisterTvD" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/googleSignInBtn"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="@id/loginBtnOpenDrawer"
+            app:layout_constraintStart_toStartOf="@id/loginBtnOpenDrawer"
+            app:layout_constraintTop_toBottomOf="@id/dividerD" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<LinearLayout
+    android:layout_width="380dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:orientation="vertical"
+    android:background="#111111"
+    android:clickable="true"
+    android:focusable="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0A0A0A"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/red_hand"
+            app:layout_constraintTop_toBottomOf="@+id/loginTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="61dp"
+            />
+        <ImageView
+            android:id="@+id/red_rings"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:src="@drawable/red_rings"
+            app:layout_constraintTop_toBottomOf="@id/loginTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="Welcome Back"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/edit_text_bkgrd"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="#888888"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/red_rings" />
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_bkgrd"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="#888888"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emailEt" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/white"
+            android:text="Login"
+            android:textColor="@color/black"
+            app:cornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passwordEt" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:orientation="vertical"
+        android:background="#111111"
+        android:clickable="true"
+        android:focusable="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0A0A0A"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/Resister_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+<!--            <ImageView-->
+<!--                android:layout_width="65dp"-->
+<!--                android:layout_height="65dp"-->
+<!--                android:src="@drawable/red_hand"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/Resister_title"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                android:layout_marginTop="61dp"-->
+<!--                />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/red_ringsR"-->
+<!--                android:layout_width="155dp"-->
+<!--                android:layout_height="155dp"-->
+<!--                android:src="@drawable/red_rings"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/Resister_title"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                />-->
+
+            <EditText
+                android:id="@+id/emailEtReg"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/edit_text_bkgrd"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="#888888"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Resister_title" />
+
+            <EditText
+                android:id="@+id/passwordEtReg"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_text_bkgrd"
+                android:hint="Create Password"
+                android:inputType="textPassword"
+                android:paddingHorizontal="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="#888888"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emailEtReg" />
+
+            <EditText
+                android:id="@+id/passwordConfEtReg"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_text_bkgrd"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:paddingHorizontal="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="#888888"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/passwordEtReg" />
+
+            <Button
+                android:id="@+id/toggleRegisterTv"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="35dp"
+                android:text="Register"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                app:cornerRadius="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/passwordConfEtReg" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

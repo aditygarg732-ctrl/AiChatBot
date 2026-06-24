@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "359842175963",
+    "project_id": "ai-chat-bot-5f40e",
+    "storage_bucket": "ai-chat-bot-5f40e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359842175963:android:74b397f5d5b030a8eb65fe",
+        "android_client_info": {
+          "package_name": "com.adiidev.aichatbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359842175963-offje82ni1qfqc99u1c18mq940tr9lth.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.adiidev.aichatbot",
+            "certificate_hash": "aa48c17a61183ed137afee6a4a103bd7ee8d1977"
+          }
+        },
+        {
+          "client_id": "359842175963-pio0hc8d0fl5r1s61aevr67307utj9jm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.adiidev.aichatbot",
+            "certificate_hash": "a471404aa9a88b95c962bfc72813901d24121b55"
+          }
+        },
+        {
+          "client_id": "359842175963-a82d6tvj7vj792dqfb7rmri4d4v9skjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKvTa_BPBtzuir5-F0w3iFHXKkvnhnDdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359842175963-a82d6tvj7vj792dqfb7rmri4d4v9skjd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

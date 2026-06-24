@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SettingsFragment">
+
+<!--    backGround Image-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:src="@drawable/settings_bckgrnd"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="#60000000"
+        tools:ignore="MissingConstraints" />
+
+<!--    hand with ring image-->
+    <ImageView
+        android:id="@+id/rings"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/orbit_rings_glow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="90dp"/>
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/glow_hand"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="125dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+<!--    General Section-->
+
+    <TextView
+        android:id="@+id/general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GENERAL"
+        android:textColor="#A0A0A0"
+        android:textSize="10sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rings"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="30dp"/>
+    
+    <ImageButton
+        android:id="@+id/clear_history"
+        android:contentDescription="Clear History"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/clear_chat"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/general"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/feedback"
+        android:contentDescription="FeedBack"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:src="@drawable/feedback"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/clear_history"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
+
+
+<!--     About Section  -->
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABOUT"
+        android:textColor="#A0A0A0"
+        android:textSize="10sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedback"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"/>
+
+    <ImageButton
+        android:id="@+id/privacy_policy"
+        android:contentDescription="Privacy Policy"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:src="@drawable/privacy_policy"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/about"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
+    <ImageButton
+        android:id="@+id/terms_of_service"
+        android:contentDescription="Terms Of Service"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:src="@drawable/terms_of_service"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/privacy_policy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
+    <ImageButton
+        android:id="@+id/app_version"
+        android:contentDescription="App Version"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:src="@drawable/app_version"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/terms_of_service"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/logout_butn"
+        android:contentDescription="Logout"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf ="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZPrivacyPolicy"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/privacyPolicyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Privacy Policy"
+        android:fontFamily="@font/f3"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/privacyPolicyText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/pp_intro_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pp_intro_title"
+                android:textSize="25sp"
+                android:fontFamily="@font/f4"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/pp_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/pp_intro"
+                android:textSize="16sp"
+                android:fontFamily="@font/f2"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/pp_info_collection_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/pp_info_collection_title"
+                android:textSize="25sp"
+                android:fontFamily="@font/f4"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/pp_info_collect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/pp_info_collect"
+                android:textSize="16sp"
+                android:fontFamily="@font/f2"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/pp_info_use_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/pp_info_use_title"
+                android:textSize="25sp"
+                android:fontFamily="@font/f4"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/pp_info_use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/pp_info_use"
+                android:textSize="16sp"
+                android:fontFamily="@font/f2"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/pp_data_protection_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/pp_data_protection_title"
+                android:textSize="25sp"
+                android:fontFamily="@font/f4"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/pp_data_protection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/pp_data_protection"
+                android:textSize="16sp"
+                android:fontFamily="@font/f2"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/pp_third_party_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/pp_third_party_title"
+                android:textSize="25sp"
+                android:fontFamily="@font/f4"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/pp_third_party"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/pp_third_party"
+                android:textSize="16sp"
+                android:fontFamily="@font/f2"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/pp_privacy_rights_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/pp_privacy_rights_title"
+                android:textSize="25sp"
+                android:fontFamily="@font/f4"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/pp_privacy_rights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/pp_privacy_rights"
+                android:textSize="16sp"
+                android:fontFamily="@font/f2"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/pp_updates_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/pp_updates_title"
+                android:textSize="25sp"
+                android:fontFamily="@font/f4"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/pp_updates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/pp_updates"
+                android:textSize="16sp"
+                android:fontFamily="@font/f2"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/pp_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="@string/pp_footer"
+                android:textSize="16sp"
+                android:fontFamily="@font/f2"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
